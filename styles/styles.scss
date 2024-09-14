@@ -1,17 +1,18 @@
-@import "/scss/colors.scss";
-@import "/scss/mixins.scss";
+@import "colors.scss";
+@import "mixins.scss";
 
 .section{
   max-width: 1920px;
+  margin: 0 auto;
     &-main{
         padding-top: 40px;
         position: relative;
-  
+        max-width: 1920px;
         margin: 0 auto;
         min-height: 70vh;
 
         &::after, &::before{
-            height:999px;
+            height:764px;
             width: 1863px;
             content: "";
             display: block;
@@ -26,7 +27,7 @@
             opacity: 0.1;
         }
         &::before{
-            background: url(/photo/) no-repeat center/cover;
+            background: url(/photo/bg.png) no-repeat center/cover;
             
         }
     }
