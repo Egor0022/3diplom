@@ -366,6 +366,7 @@ h2 {
   cursor: pointer;
   text-transform: uppercase;
   transition: background 0.25s;
+  margin-left: 74%;
   padding: 8px 18px;
   font-size: 13px;
   line-height: 15px;
@@ -511,6 +512,12 @@ h2 {
   margin-top: 100px;
 }
 
+.explore-list {
+  display: none;
+}
+.explore-list.active {
+  display: block;
+}
 .explore-items {
   display: flex;
   flex-direction: column;
@@ -906,14 +913,12 @@ h2 {
 }
 
 .swiper {
-  width: 650px;
+  width: 100%;
   height: 370px;
-  margin: 30px auto;
-  border: 2px solid pink;
 }
 .swiper-wrapper {
   position: relative;
-  width: 2600px;
+  width: 100%;
   height: 370px;
   display: flex;
   left: 0px;
@@ -925,13 +930,14 @@ h2 {
 }
 .swiper-button {
   position: absolute;
-  top: 50%;
+  top: 35%;
   transform: translateY(-50%);
-  width: 32px;
-  height: 32px;
-  background: #8c96a0;
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
   border-radius: 6px;
-  z-index: 9;
+  background: #8C96A0;
+  z-index: 10;
   cursor: pointer;
   transition: background 0.25s;
 }
@@ -956,7 +962,7 @@ h2 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 999;
+  z-index: 1000;
   opacity: 0;
   visibility: hidden;
 }
@@ -1017,9 +1023,10 @@ h2 {
   font-weight: 500;
   width: 100%;
   justify-content: space-between;
-  font-size: 14px;
+  font-size: 21px;
   line-height: 17px;
   color: #fff;
+  gap: 190px;
 }
 .modal-total__price {
   font-size: 20px;
